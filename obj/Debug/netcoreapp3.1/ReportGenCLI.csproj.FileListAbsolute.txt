@@ -1,0 +1,13 @@
+C:\Users\faizs\source\repos\ReportGenCLI\bin\Debug\netcoreapp3.1\ReportGenCLI.exe
+C:\Users\faizs\source\repos\ReportGenCLI\bin\Debug\netcoreapp3.1\ReportGenCLI.deps.json
+C:\Users\faizs\source\repos\ReportGenCLI\bin\Debug\netcoreapp3.1\ReportGenCLI.runtimeconfig.json
+C:\Users\faizs\source\repos\ReportGenCLI\bin\Debug\netcoreapp3.1\ReportGenCLI.runtimeconfig.dev.json
+C:\Users\faizs\source\repos\ReportGenCLI\bin\Debug\netcoreapp3.1\ReportGenCLI.dll
+C:\Users\faizs\source\repos\ReportGenCLI\bin\Debug\netcoreapp3.1\ReportGenCLI.pdb
+C:\Users\faizs\source\repos\ReportGenCLI\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Users\faizs\source\repos\ReportGenCLI\bin\Debug\netcoreapp3.1\System.IO.Packaging.dll
+C:\Users\faizs\source\repos\ReportGenCLI\obj\Debug\netcoreapp3.1\ReportGenCLI.AssemblyInfoInputs.cache
+C:\Users\faizs\source\repos\ReportGenCLI\obj\Debug\netcoreapp3.1\ReportGenCLI.AssemblyInfo.cs
+C:\Users\faizs\source\repos\ReportGenCLI\obj\Debug\netcoreapp3.1\ReportGenCLI.csproj.CopyComplete
+C:\Users\faizs\source\repos\ReportGenCLI\obj\Debug\netcoreapp3.1\ReportGenCLI.dll
+C:\Users\faizs\source\repos\ReportGenCLI\obj\Debug\netcoreapp3.1\ReportGenCLI.pdb
