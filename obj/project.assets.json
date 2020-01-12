@@ -83,30 +83,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\faizs\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\narah\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\faizs\\source\\repos\\ReportGenCLI\\ReportGenCLI.csproj",
+      "projectUniqueName": "C:\\Users\\narah\\Desktop\\reportGeneratorV2\\ReportGenCLI.csproj",
       "projectName": "ReportGenCLI",
-      "projectPath": "C:\\Users\\faizs\\source\\repos\\ReportGenCLI\\ReportGenCLI.csproj",
-      "packagesPath": "C:\\Users\\faizs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\faizs\\source\\repos\\ReportGenCLI\\obj\\",
+      "projectPath": "C:\\Users\\narah\\Desktop\\reportGeneratorV2\\ReportGenCLI.csproj",
+      "packagesPath": "C:\\Users\\narah\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\narah\\Desktop\\reportGeneratorV2\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\faizs\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\narah\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

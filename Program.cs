@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 
@@ -13,7 +14,7 @@ namespace ReportGenCLI
         static void Main(string[] args)
         {
             PatientData patient = new PatientData("Joe Doe", "Johnny", "02/17/1988");
-            string templatePath = @"Reports\ReportTemplate\Report_Template.dotx";
+            string templatePath = @"Reports\ReportTemplate\Report Template.dotx";
             string newfilePath = @"Reports\GeneratedReports\" + patient.name + ".docx";
 
             if (File.Exists(newfilePath))
@@ -23,7 +24,14 @@ namespace ReportGenCLI
 
             File.Copy(templatePath, newfilePath);
 
-            byte[] byteArray = File.ReadAllBytes(newfilePath);
+            insertPatientData(patient,templatePath,newfilePath);
+
+            Console.WriteLine("Modified");
+
+        }
+
+        public static void insertPatientData(PatientData patient,string templatePath,string newfilePath){
+            byte[] byteArray = File.ReadAllBytes(templatePath);
 
             using (var stream = new MemoryStream())
             {
@@ -34,33 +42,15 @@ namespace ReportGenCLI
                     //Needed because I'm working with template dotx file, 
                     //remove this if the template is a normal docx. 
                     doc.ChangeDocumentType(DocumentFormat.OpenXml.WordprocessingDocumentType.Document);
-                    doc.InsertText("NAME", "testtesttesttest");
+                    doc.InsertText("NAME", patient.name);
+                    doc.InsertText("PREFERRED_NAME",patient.preferredName);
                 }
                 using (FileStream fs = new FileStream(newfilePath, FileMode.Create))
                 {
                     stream.WriteTo(fs);
                 }
             }
-
-            //Console.WriteLine(makeRegex("name"));
-            //SearchAndReplace(newfilePath,makeRegex("name"),patient.name);
-            //SearchAndReplace(newfilePath,"_preferredName",patient.preferredName);
-
-            /*
-            Document doc = new Document();
-            doc.LoadFromFile(templatePath);
-            doc.Replace("fname", patient.name, true, true);
-            doc.Replace("fpreferredName",patient.preferredName,true,true);
-            doc.Replace("fdob",patient.dob,true,true);
-            doc.Replace("_age","43",true,true);
-            doc.SaveToFile(newfilePath, FileFormat.Docx2013);
-            //SearchAndReplace(newfilePath,"Evaluation Warning: The document was created with Spire.Doc for .NET.","");
-            */
-
-            Console.WriteLine("Modified");
-
         }
-
         public static WordprocessingDocument InsertText(this WordprocessingDocument doc, string contentControlTag, string text)
         {
             var filteredBodyContentControls = doc.MainDocumentPart.Document.Body.Descendants<SdtElement>()

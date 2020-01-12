@@ -11,3 +11,17 @@ C:\Users\faizs\source\repos\ReportGenCLI\obj\Debug\netcoreapp3.1\ReportGenCLI.As
 C:\Users\faizs\source\repos\ReportGenCLI\obj\Debug\netcoreapp3.1\ReportGenCLI.csproj.CopyComplete
 C:\Users\faizs\source\repos\ReportGenCLI\obj\Debug\netcoreapp3.1\ReportGenCLI.dll
 C:\Users\faizs\source\repos\ReportGenCLI\obj\Debug\netcoreapp3.1\ReportGenCLI.pdb
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\ReportGenCLI.exe
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\ReportGenCLI.deps.json
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\ReportGenCLI.runtimeconfig.json
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\ReportGenCLI.runtimeconfig.dev.json
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\ReportGenCLI.dll
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\ReportGenCLI.pdb
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\System.IO.Packaging.dll
+C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.csprojAssemblyReference.cache
+C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.AssemblyInfoInputs.cache
+C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.AssemblyInfo.cs
+C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.csproj.CopyComplete
+C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.dll
+C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.pdb
