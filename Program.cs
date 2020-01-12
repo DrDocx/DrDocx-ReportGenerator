@@ -205,20 +205,23 @@ namespace ReportGenCLI
                          DistanceFromRight = (UInt32Value)0U,
                          EditId = "50D07946"
                      });
+            
             Console.WriteLine(element);
 
             double sdtWidth = element.Inline.Extent.Cx;
             double sdtHeight = element.Inline.Extent.Cy;
             double sdtRatio = sdtWidth / sdtHeight;
 
-            Console.WriteLine(sdtWidth.ToString() + "," + sdtHeight.ToString());
-
             int finalWidth = (int)(sdtWidth*7);
-            int finalHeight = (int)(finalWidth*1.25);
+            int finalHeight = (int)(finalWidth*1.2);
+
+            Console.WriteLine(finalWidth.ToString() + "," + finalHeight.ToString());
             
             //Resize picture placeholder
             element.Inline.Extent.Cx = finalWidth;
             element.Inline.Extent.Cy = finalHeight;
+
+            
 
             //Change width/height of picture shapeproperties Transform
             //This will override above height/width until you manually drag image for example
@@ -228,7 +231,6 @@ namespace ReportGenCLI
             element.Inline.Graphic.GraphicData
                 .GetFirstChild<DocumentFormat.OpenXml.Drawing.Pictures.Picture>()
                 .ShapeProperties.Transform2D.Extents.Cy = finalHeight;
-            
 
             // Append the reference to body, the element should be in a Run.
             wordDoc.MainDocumentPart.Document.Body.AppendChild(new Paragraph(new Run(element)));
@@ -258,7 +260,7 @@ namespace ReportGenCLI
                 TableCell percentile = new TableCell(LabelCellFormat(),
                     new Paragraph(new Run(new RunProperties(new RunFonts() { Ascii = "Times New Roman" }, new Bold(), new FontSize() { Val = "24" }),
                     new Text("Percentile"))));
-                tr.Append(testName); tr.Append(zScore); tr.Append(percentile);
+                tr.Append(testName,zScore,percentile);
                 table.Append(tr);
 
 
