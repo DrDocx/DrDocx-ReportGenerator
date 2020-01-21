@@ -29,6 +29,7 @@ namespace WordDocEditing
 
 		public static void JoinFile(WordprocessingDocument myDoc, string otherFilePath)
 		{
+			PageBreak(myDoc);
 			MainDocumentPart mainPart = myDoc.MainDocumentPart;
 			string altChunkId = "AltChunkId1";
 			AlternativeFormatImportPart chunk = mainPart.AddAlternativeFormatImportPart(
@@ -90,6 +91,7 @@ namespace WordDocEditing
 
 		public static void DisplayTestGroup(WordprocessingDocument myDoc, TestResultGroup testResultGroup){
 			myDoc.MainDocumentPart.Document.Body.Append(CreateTitleTable(testResultGroup.TestGroupInfo.Name));
+			LineBreak(myDoc);
 			myDoc.MainDocumentPart.Document.Body.Append(CreateSubTable(testResultGroup));
 		}
 
@@ -244,16 +246,12 @@ namespace WordDocEditing
 					DistanceFromRight = (UInt32Value)0U,
 					EditId = "50D07946"
 					});
-			
-			Console.WriteLine(element);
 
 			double sdtWidth = element.Inline.Extent.Cx;
 			double sdtHeight = element.Inline.Extent.Cy;
 
 			int finalWidth = (int)(sdtWidth*scaleWidth);
 			int finalHeight = (int)(finalWidth*scaleHeight);
-
-			Console.WriteLine(finalWidth.ToString() + "," + finalHeight.ToString());
 			
 			//Resize picture placeholder
 			element.Inline.Extent.Cx = finalWidth;
