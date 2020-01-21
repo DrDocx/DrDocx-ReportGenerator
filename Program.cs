@@ -12,7 +12,7 @@ using DW = DocumentFormat.OpenXml.Drawing.Wordprocessing;
 using PIC = DocumentFormat.OpenXml.Drawing.Pictures;
 
 using Models;
-using WordDocEditing;
+using static WordDocEditing.WordAPI;
 
 namespace ReportGenCLI
 {
@@ -70,13 +70,13 @@ namespace ReportGenCLI
 			using(WordprocessingDocument myDoc = WordprocessingDocument.Open(newfilePath,true)){
 
 				myDoc.ChangeDocumentType(DocumentFormat.OpenXml.WordprocessingDocumentType.Document);
-				WordAPI.InsertPatientData(myDoc,patient);
+				InsertPatientData(myDoc,patient);
 				foreach(TestResultGroup testResultGroup in patient.ResultGroups){
-					WordAPI.DisplayTestGroup(myDoc,testResultGroup);
+					DisplayTestGroup(myDoc,testResultGroup);
 				}
-				WordAPI.PageBreak(myDoc);
-				WordAPI.InsertPicturePng(myDoc, imagePath,7,1.2);
-				WordAPI.JoinFile(myDoc,vizPath);
+				PageBreak(myDoc);
+				InsertPicturePng(myDoc, imagePath,7,1.2);
+				JoinFile(myDoc,vizPath);
 			}
 
 			
