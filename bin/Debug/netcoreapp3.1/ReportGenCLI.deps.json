@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "ReportGenCLI/1.0.0": {
         "dependencies": {
-          "DocumentFormat.OpenXml": "2.10.0"
+          "DocumentFormat.OpenXml": "2.10.0",
+          "SkiaSharp": "1.68.1.1"
         },
         "runtime": {
           "ReportGenCLI.dll": {}
@@ -22,6 +23,41 @@
           "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {
             "assemblyVersion": "2.10.0.0",
             "fileVersion": "2.10.0.0"
+          }
+        }
+      },
+      "SkiaSharp/1.68.1.1": {
+        "runtime": {
+          "lib/netstandard1.3/SkiaSharp.dll": {
+            "assemblyVersion": "1.68.0.0",
+            "fileVersion": "1.68.1.1"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tizen-armel/native/libSkiaSharp.so": {
+            "rid": "tizen-armel",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/tizen-x86/native/libSkiaSharp.so": {
+            "rid": "tizen-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -47,6 +83,13 @@
       "sha512": "sha512-0FZij7iRHXUAM/gW3Y4bHdeZA11alYDfBy35t0F31qci4jRqqDDdpudVZQ0TkOu6IQyu+gTNoRpLfICDk14Ycw==",
       "path": "documentformat.openxml/2.10.0",
       "hashPath": "documentformat.openxml.2.10.0.nupkg.sha512"
+    },
+    "SkiaSharp/1.68.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fJteGIKAMmLD9tSQgdvZqLqECub6B55pK1MH5QyanLOr8JQ8uUMKKcrAcpocNnmIS/YsUJOL4AD7dO6mAwP7mQ==",
+      "path": "skiasharp/1.68.1.1",
+      "hashPath": "skiasharp.1.68.1.1.nupkg.sha512"
     },
     "System.IO.Packaging/4.7.0": {
       "type": "package",

@@ -25,3 +25,9 @@ C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.As
 C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.csproj.CopyComplete
 C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.dll
 C:\Users\narah\Desktop\reportGeneratorV2\obj\Debug\netcoreapp3.1\ReportGenCLI.pdb
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\SkiaSharp.dll
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\runtimes\tizen-armel\native\libSkiaSharp.so
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\runtimes\tizen-x86\native\libSkiaSharp.so
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\narah\Desktop\reportGeneratorV2\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libSkiaSharp.dll

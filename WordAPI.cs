@@ -251,7 +251,7 @@ namespace WordDocEditing
 			double sdtHeight = element.Inline.Extent.Cy;
 
 			int finalWidth = (int)(sdtWidth*scaleWidth);
-			int finalHeight = (int)(finalWidth*scaleHeight);
+			int finalHeight = (int)(sdtHeight*scaleHeight);
 			
 			//Resize picture placeholder
 			element.Inline.Extent.Cx = finalWidth;
