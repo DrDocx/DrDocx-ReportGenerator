@@ -1,22 +1,14 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Collections.Generic;
-
-using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Wordprocessing;
-
-using A = DocumentFormat.OpenXml.Drawing;
-using DW = DocumentFormat.OpenXml.Drawing.Wordprocessing;
-using PIC = DocumentFormat.OpenXml.Drawing.Pictures;
 
 using Microcharts;
 using Entry = Microcharts.Entry;
 
 using SkiaSharp;
 
-using Models;
+using DrDocxModels;
 using static WordDocEditing.WordAPI;
 
 namespace ReportGenCLI
@@ -128,6 +120,7 @@ namespace ReportGenCLI
 				PageBreak(myDoc);
 				//InsertPicturePng(myDoc, imagePath,7,1.2);
 				//JoinFile(myDoc,vizPath);
+
 			}
 
 			var chart = new BarChart() {
